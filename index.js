@@ -19,8 +19,9 @@ app.get('/hello', (req, res) => {
 // POST
 //localhost:3000/ingreso
 app.post('/ingreso', (req, res) => {
+    let data = req.body;
     res.json({
-        respuesta: 'endpoint ingreso OK'
+        respuesta: data
     });
 });
 
