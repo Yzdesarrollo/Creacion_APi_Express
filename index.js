@@ -10,7 +10,10 @@ app.use(express.json()); // Para datos en formato json
 // GET
 // localhost:3000/hello
 app.get('/hello', (req, res) => {
-    res.send('endpoint hello OK');
+    let data = req.query;
+    console.log(data);
+    
+    res.send(data);
 });
 
 // POST
